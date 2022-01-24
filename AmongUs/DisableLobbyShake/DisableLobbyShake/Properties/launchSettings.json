@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DisableLobbyShake": {
+      "commandName": "Executable",
+      "executablePath": "$(MSBuildProjectDirectory)/../../$(GameVersion)/Among Us.exe"
+    }
+  }
+}
