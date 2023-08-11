@@ -200,7 +200,7 @@ namespace FlipperHelper
 		}
 
 		//Treasure Chest
-		[HarmonyPatch(typeof(TreasureChest), "FixedUpdate")]
+		[HarmonyPatch(typeof(TreasureChest), "Update")]
 		[HarmonyPostfix]
 		static void TreasureChestUpdate(TreasureChest __instance)
 		{
