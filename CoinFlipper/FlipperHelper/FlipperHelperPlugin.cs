@@ -23,12 +23,12 @@ namespace FlipperHelper
 		{
 			if (Input.GetKey(KeyCode.LeftShift))
 			{
-				__instance.strongerHandsCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeStrongerHandsCostText.GetComponent<TextMeshProUGUI>().text =
-				CoinHelper.FormatCoins(MoreCoinsButton.moreCoinClickValue / PurchaseLog.strongerHandsGetMoreCoins);
+				__instance.strongerHandsCostText.text = __instance.fakeStrongerHandsCostText.text =
+				MoreCoinsButton.FormatCoins(MoreCoinsButton.moreCoinClickValue / PurchaseLog.strongerHandsGetMoreCoins);
 				if (MoreCoinsButton.moreCoinsUpgrades > 0)
 				{
-					__instance.greaterCoinsCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeGreaterCoinCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(MoreCoinsButton.greaterCoinsCost / PurchaseLog.greaterCoinsGetMoreCoins);
+					__instance.greaterCoinsCostText.text = __instance.fakeGreaterCoinCostText.text =
+						MoreCoinsButton.FormatCoins(MoreCoinsButton.greaterCoinsCost / PurchaseLog.greaterCoinsGetMoreCoins);
 				}
 			}
 		}
@@ -42,8 +42,8 @@ namespace FlipperHelper
 			{
 				if (MoreCoinsButton.greaterCoinsCount > 0)
 				{
-					__instance.knowledgeCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeKnowledgeHandsCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(KnowledgeUpgrade.knowledgeClickValue / PurchaseLog.knowledgePlussAmount);
+					__instance.knowledgeCostText.text = __instance.fakeKnowledgeHandsCostText.text =
+						KnowledgeUpgrade.FormatCoins(KnowledgeUpgrade.knowledgeClickValue / PurchaseLog.knowledgePlussAmount);
 				}
 			}
 		}
@@ -57,8 +57,8 @@ namespace FlipperHelper
 			{
 				if (KnowledgeUpgrade.knowledgeUpgradeCount > 0)
 				{
-					__instance.fistCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeFistCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(StrongerFist.fistCost / PurchaseLog.fistPlussAmount);
+					__instance.fistCostText.text = __instance.fakeFistCostText.text =
+						StrongerFist.FormatCoins(StrongerFist.fistCost / PurchaseLog.fistPlussAmount);
 				}
 			}
 		}
@@ -72,8 +72,8 @@ namespace FlipperHelper
 			{
 				if (StrongerFist.fistUpgradeCount > 0)
 				{
-					__instance.injectionButtonCost.GetComponent<TextMeshProUGUI>().text = __instance.fakeInjectionButtonCost.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(HandInecjtion.injectionCost / PurchaseLog.injectionPlussAmount);
+					__instance.injectionButtonCost.text = __instance.fakeInjectionButtonCost.text =
+						HandInecjtion.FormatCoins(HandInecjtion.injectionCost / PurchaseLog.injectionPlussAmount);
 				}
 			}
 		}
@@ -87,8 +87,8 @@ namespace FlipperHelper
 			{
 				if (HandInecjtion.injectionUpgradeCount > 0)
 				{
-					__instance.brainPowerButtonCost.GetComponent<TextMeshProUGUI>().text = __instance.fakeBrainPowerButtonCost.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(BrainPower.brainPowerCost / PurchaseLog.brainPowerPlussAmount);
+					__instance.brainPowerButtonCost.text = __instance.fakeBrainPowerButtonCost.text =
+						BrainPower.FormatCoins(BrainPower.brainPowerCost / PurchaseLog.brainPowerPlussAmount);
 				}
 			}
 		}
@@ -102,8 +102,8 @@ namespace FlipperHelper
 			{
 				if (BrainPower.brainPowerUpgradeCount > 0)
 				{
-					__instance.ExplosiveButtonCost.GetComponent<TextMeshProUGUI>().text = __instance.fakeExplosiveButtonCost.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(ExplosiveFlips.explosiveCost / PurchaseLog.explosiveFlipsPlussAmount);
+					__instance.ExplosiveButtonCost.text = __instance.fakeExplosiveButtonCost.text =
+						ExplosiveFlips.FormatCoins(ExplosiveFlips.explosiveCost / PurchaseLog.explosiveFlipsPlussAmount);
 				}
 			}
 		}
@@ -117,8 +117,8 @@ namespace FlipperHelper
 			{
 				if (ExplosiveFlips.explosiveUpgradeCount > 0)
 				{
-					__instance.hydrationCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeHydrationCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(HydrationButton.hydrationVost / PurchaseLog.hydrationFlipsPlussAmount);
+					__instance.hydrationCostText.text = __instance.fakeHydrationCostText.text =
+						HydrationButton.FormatCoins(HydrationButton.hydrationVost / PurchaseLog.hydrationFlipsPlussAmount);
 				}
 			}
 		}
@@ -133,8 +133,8 @@ namespace FlipperHelper
 				if (HydrationButton.hydrationUpgradeCount > 0)
 				{
 
-					__instance.potionCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakePotionCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(StrangePotion.potionCost / PurchaseLog.strangePotiongPlussAmount);
+					__instance.potionCostText.text = __instance.fakePotionCostText.text =
+						StrangePotion.FormatCoins(StrangePotion.potionCost / PurchaseLog.strangePotiongPlussAmount);
 				}
 			}
 		}
@@ -148,8 +148,8 @@ namespace FlipperHelper
 			{
 				if (StrangePotion.potionUpgradeCount > 0)
 				{
-					__instance.realMasterFlipsCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeMasterFlipsCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(MasterFlipper.MasterFlipsCost / PurchaseLog.masterFlipsPlussAmount);
+					__instance.realMasterFlipsCostText.text = __instance.fakeMasterFlipsCostText.text =
+						MasterFlipper.FormatCoins(MasterFlipper.MasterFlipsCost / PurchaseLog.masterFlipsPlussAmount);
 				}
 			}
 		}
@@ -163,8 +163,8 @@ namespace FlipperHelper
 			{
 				if (MasterFlipper.MasterFlipsUpgradeCount > 0)
 				{
-					__instance.handShakeCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeHandShakeCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(HandShake.handshakeCost / PurchaseLog.handShakePlussAmount);
+					__instance.handShakeCostText.text = __instance.fakeHandShakeCostText.text =
+						HandShake.FormatCoins(HandShake.handshakeCost / PurchaseLog.handShakePlussAmount);
 				}
 			}
 		}
@@ -178,8 +178,8 @@ namespace FlipperHelper
 			{
 				if (HandShake.handShakeUpgradeCount > 0)
 				{
-					__instance.upgrade12CostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeUpgrade12CostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(Upgrade12.upgrade12Cost / PurchaseLog.upgrade12Pluss);
+					__instance.upgrade12CostText.text = __instance.fakeUpgrade12CostText.text =
+						Upgrade12.FormatCoins(Upgrade12.upgrade12Cost / PurchaseLog.upgrade12Pluss);
 				}
 			}
 		}
@@ -193,8 +193,8 @@ namespace FlipperHelper
 			{
 				if (Upgrade12.upgrade12Count > 0)
 				{
-					__instance.magicUpgradeText.GetComponent<TextMeshProUGUI>().text = __instance.fakeMagicUpgradeText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(MagicFlipsUpgrade.magicUpgradeCost / PurchaseLog.magicFlipsPluss);
+					__instance.magicUpgradeText.text = __instance.fakeMagicUpgradeText.text =
+						MagicFlipsUpgrade.FormatCoins(MagicFlipsUpgrade.magicUpgradeCost / PurchaseLog.magicFlipsPluss);
 				}
 			}
 		}
@@ -208,8 +208,8 @@ namespace FlipperHelper
 			{
 				if (MagicFlipsUpgrade.magicUpgradeCount > 0)
 				{
-					__instance.treausreCostText.GetComponent<TextMeshProUGUI>().text = __instance.treausreCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(TreasureChest.treasureCost / PurchaseLog.treasureChestPluss);
+					__instance.treausreCostText.text = __instance.fakeTreausreCostText.text =
+						TreasureChest.FormatCoins(TreasureChest.treasureCost / PurchaseLog.treasureChestPluss);
 				}
 			}
 		}
@@ -223,8 +223,8 @@ namespace FlipperHelper
 			{
 				if (TreasureChest.treasureCount > 0)
 				{
-					__instance.ritualCostText.GetComponent<TextMeshProUGUI>().text = __instance.fakeRitualCostText.GetComponent<TextMeshProUGUI>().text =
-						CoinHelper.FormatCoins(RitualUpgrade.ritualCost / PurchaseLog.ritualPluss);
+					__instance.ritualCostText.text = __instance.fakeRitualCostText.text =
+						RitualUpgrade.FormatCoins(RitualUpgrade.ritualCost / PurchaseLog.ritualPluss);
 				}
 			}
 		}
